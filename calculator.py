@@ -1,9 +1,23 @@
-def add(a: int, b: int) -> int:
+"""Simple calculator module with basic math functions."""
+
+
+def add(a, b):
     """Return the sum of a and b."""
-    # BUG: should add, but currently subtracts
+    return a + b
+
+
+def subtract(a, b):
+    """Return the difference of a and b."""
     return a - b
 
 
-def multiply(a: int, b: int) -> int:
+def multiply(a, b):
     """Return the product of a and b."""
     return a * b
+
+
+def divide(a, b):
+    """Return the quotient of a and b."""
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
